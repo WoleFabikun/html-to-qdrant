@@ -115,7 +115,7 @@ def process_txt_files(folder_path, min_chunk_size, max_chunk_size, window_size, 
                     'keywords': chunk['keywords'],
                 })
             # Delete the HTML file after processing
-            # os.remove(file_path)
+            os.remove(file_path)
         except Exception as e:
             print(f"Error processing file {txt_file}: {e}")
 
@@ -127,7 +127,7 @@ def process_txt_files(folder_path, min_chunk_size, max_chunk_size, window_size, 
     return documents
 
 # Call the function with the folder path "websites"
-folder_path = "cleaned_websites"
+folder_path = "websites"
 min_chunk_size = 100  # Adjust the minimum chunk size as needed
 max_chunk_size = 200  # Adjust the maximum chunk size as needed
 window_size = 150  # Adjust the sliding window size as needed

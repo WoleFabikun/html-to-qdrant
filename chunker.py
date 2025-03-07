@@ -79,7 +79,7 @@ def process_txt_files(folder_path):
                 })
 
             # Delete the HTML file after processing
-            # os.remove(file_path)
+            os.remove(file_path)
 
         except Exception as e:
             print(f"Error processing file {txt_file}: {e}")
@@ -92,5 +92,5 @@ def process_txt_files(folder_path):
     return documents
 
 # Call the function with the folder path "websites"
-folder_path = "cleaned_websites"
+folder_path = "websites"
 documents = process_txt_files(folder_path)

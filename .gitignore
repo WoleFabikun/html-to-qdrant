@@ -1,13 +1,8 @@
 .env
-venv/
+.venv
 state_raw/
 state_vectors/
 website/
 websites/
 train.jsonl
-chunker-new-results/
-websites-*/
-cleaned_websites-*/
-
-*.jsonl
 pdfs/
